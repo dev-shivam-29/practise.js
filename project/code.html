@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket Game</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Bat Ball Stump Game</h1>
+
+<button onclick="
+let randomNumber = Math.random() * 3;
+let computerChoice;
+
+if (randomNumber <= 1) {
+    computerChoice = 'Bat';
+} else if (randomNumber <= 2) {
+    computerChoice = 'Ball';
+} else {
+    computerChoice = 'Stump';
+}
+
+let resultMsg;
+
+if (computerChoice === 'Ball') {
+    resultMsg = 'User won';
+} else if (computerChoice === 'Bat') {
+    resultMsg = 'It\\'s a tie';
+} else {
+    resultMsg = 'Computer won';
+}
+
+alert(`You chose Bat. Computer chose ${computerChoice}. ${resultMsg}`);
+">Bat</button>
+
+
+<button onclick="
+let randomNumber = Math.random() * 3;
+let computerChoice;
+
+if (randomNumber <= 1) {
+    computerChoice = 'Bat';
+} else if (randomNumber <= 2) {
+    computerChoice = 'Ball';
+} else {
+    computerChoice = 'Stump';
+}
+
+let resultMsg;
+
+if (computerChoice === 'Ball') {
+    resultMsg = 'It\\'s a tie';
+} else if (computerChoice === 'Bat') {
+    resultMsg = 'Computer won';
+} else {
+    resultMsg = 'User won';
+}
+
+alert(`You chose Ball. Computer chose ${computerChoice}. ${resultMsg}`);
+">Ball</button>
+
+
+<button onclick="
+let randomNumber = Math.random() * 3;
+let computerChoice;
+
+if (randomNumber <= 1) {
+    computerChoice = 'Bat';
+} else if (randomNumber <= 2) {
+    computerChoice = 'Ball';
+} else {
+    computerChoice = 'Stump';
+}
+
+let resultMsg;
+
+if (computerChoice === 'Ball') {
+    resultMsg = 'Computer won';
+} else if (computerChoice === 'Bat') {
+    resultMsg = 'User won';
+} else {
+    resultMsg = 'It\\'s a tie';
+}
+
+alert(`You chose Stump. Computer chose ${computerChoice}. ${resultMsg}`);
+">Stump</button>
+
+</body>
+</html>
