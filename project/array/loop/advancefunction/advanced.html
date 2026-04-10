@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Advanced Function</title>
+</head>
+<body>
+    <!-- <button id ="my-button" onclick="console.log('i am clicked');">click me</button>-->
+     <!-- //ab  hm ek event lisner ka use karenge okk na 
+     <button id="my-button">click me</button>
+     let buttonElement = document.query -->
+    <script> 
+
+        //ab hm anonymous function ka usse karenge
+
+        /*let sum = function(num1,num2) {
+            return num1 + num2 ;
+            
+        };
+        // isma yahi par new decleare kar raha hu mai
+        let newSum = sum;
+        console.log(sum (4,5));
+        console.log(newSum(4,5));*/
+        // ab hm functions ko bhi pass kar sakte hai
+        // ab hm 3 number ko ek sath add kar raha hai okk 
+        // let sum = function(num1,num2){
+        //     return num1 + num2;
+        // };
+
+        // let sumThreeNumbers = function(num1, num2,num3,sumTwoNumber) {
+        //     let sum1 = sumTwoNumber(num1, num2);
+        //     return sumTwoNumber(sum1,num3);
+
+        // }
+        // console.log(sumThreeNumbers(4,5,6, sum));
+
+        // arrow function
+        // let sum = function(num1, num2){
+        //     return num1 + num2;
+        // }
+        //or arrow function 
+        // let sum =(num1,num2)=> {
+        //     return num1 + num2;
+        // }
+        // console.log(sum(6,2));
+        // let square =(num)=> {
+        //     return num* num;
+        // }
+        // console.log(square(5));
+
+    //agar aap ka code single line hai to bracket and curlibraces bhi optional hai app ke liye 
+    // let square = num=> num * num;
+    // console.log(square(5));
+    // // set time out js
+    //     let alarm = function() {
+    //         console.log('subaha ho gayi,uth jaao');
+    //     };
+    //     setTimeout(alarm ,5000);
+    //     console.log('Alarm set');
+    //set Time out function with arrow function
+    // let alarm = () => console.log('subaha ho gayi, uth jaao.');
+    // setTimeout(alarm,5000);
+    // console.log('alarm set');
+    // ab hm clearTime out ka use karenge aur isko print nahi hone denge ab hm
+        // let alarm = () => console.log('subaha ho gayi, uth jaao.');
+        // let timerId =setTimeout(alarm,5000);
+        // console.log(`alarm set with timerId:${timerId}`);
+        // clearTimeout(timerId);
+    //setInterval
+    // let alarm = () => console.log('subaha ho gayi, uth jaao.${new Date()}');
+    // let intervalId = setInterval(alarm,1000);
+    // setTimeout(() => clearInterval(intervalId),5000);
+
+    // // for each loop
+    // let arr = [3,5,7,9];
+    // for (let i =0 ; i < arr.length; i++) {
+    //     console.log(arr[i]);
+    // }
+    // // arr.forEach((num)=> console.log(num));
+    // // ab hm filer array ka use karenge okk na 
+    // let arr = [1,2,3,4,5,6,7,8,9];
+    // let odds  = arr.filter((num,index) => {
+    //     if (num%2 ===1) {
+    //         return true;
+
+    //     } else{
+    //         return false;
+    // //     }
+    // // });
+    // // console.log(odds);
+    // let newOdds =arr.filter(
+    //     (num ,index) => num % 2===1
+    // );
+    // console.log(newOdds);
+
+    //map in array
+    let arr = [1,2,3,4,5];
+    let squares = arr.map((num)=>{
+        return num *num;
+
+    });
+     console.log(squares);
+
+    </script>
+</body>
+</html> 
